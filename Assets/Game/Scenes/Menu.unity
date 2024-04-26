@@ -4461,6 +4461,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxSceneLoadCount: 2
+  lastAdTimeKey: LastAdTime
 --- !u!1 &856555683
 GameObject:
   m_ObjectHideFlags: 0
@@ -6152,7 +6153,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0d89675426ba914bb84efb3d1b80b42, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  wordID: 28
+  wordID: 0
 --- !u!114 &1023975102
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8116,7 +8117,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0d89675426ba914bb84efb3d1b80b42, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  wordID: 29
+  wordID: 0
 --- !u!1 &1252309293
 GameObject:
   m_ObjectHideFlags: 0
@@ -9352,7 +9353,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1439153401
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9365,14 +9366,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b512885d0a3d04d61b4ee9b37f8e0c54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UI: {fileID: 1287977427}
-  referenceRectTransform: {fileID: 1612897437}
-  frame:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 0
-    height: 0
 --- !u!4 &1439153402
 Transform:
   m_ObjectHideFlags: 0
@@ -12804,8 +12797,8 @@ GameObject:
   - component: {fileID: 1988937000}
   - component: {fileID: 1988937003}
   - component: {fileID: 1988937004}
-  - component: {fileID: 1988936999}
   - component: {fileID: 1988937005}
+  - component: {fileID: 1988937006}
   m_Layer: 5
   m_Name: new-games-button
   m_TagString: Untagged
@@ -12832,18 +12825,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 60}
   m_SizeDelta: {x: 458, y: 236}
   m_Pivot: {x: 0.5, y: 0}
---- !u!114 &1988936999
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1988936997}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 295d7ececb652476781086bbcc1abea6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1988937000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12888,7 +12869,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1988936999}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: MobileTools.WebviewHandler, Assembly-CSharp
         m_MethodName: LoadURL
         m_Mode: 5
@@ -12987,16 +12968,16 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1988936999}
-        m_TargetAssemblyTypeName: MobileTools.WebviewHandler, Assembly-CSharp
-        m_MethodName: LoadURL
-        m_Mode: 5
+      - m_Target: {fileID: 1988937006}
+        m_TargetAssemblyTypeName: Ricimi.PopupOpener, Assembly-CSharp
+        m_MethodName: OpenPopup
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: https://theogkids.com/cross-promotion-games/
+          m_StringArgument: https://play.google.com/store/search?q=pub:Overclocked+Generation+Kids&c=apps
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!82 &1988937005
@@ -13095,6 +13076,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1988937006
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1988936997}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 729d3571ed7354ba184275ba6042151c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  popupPrefab: {fileID: 6565308789132622994, guid: a03772774509745ac9a4b9daefc9fde3, type: 3}
 --- !u!1 &2001397267
 GameObject:
   m_ObjectHideFlags: 0

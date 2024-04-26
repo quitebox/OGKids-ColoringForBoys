@@ -8,7 +8,7 @@ namespace MobileTools
         [SerializeField] private int maxSceneLoadCount = 0;
 
         [SerializeField] private string lastAdTimeKey = "LastAdTime";
-        private float adInterval = 0f;
+        private float adInterval = 60f;
 
         private void Start()
         {
@@ -41,8 +41,6 @@ namespace MobileTools
 
         private void CheckPlayAd()
         {
-            adInterval = 180f;
-
             // Get the last ad time from PlayerPrefs
             float lastAdTime = PlayerPrefs.GetFloat(lastAdTimeKey, 0f);
 

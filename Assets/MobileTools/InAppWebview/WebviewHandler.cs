@@ -8,8 +8,10 @@ namespace MobileTools
     {
         public void LoadURL(string URL)
         {
-            if (WebviewManager.Instance != null)
-                WebviewManager.Instance.LoadURL(URL);
+            //if (WebviewManager.Instance != null)
+            //    WebviewManager.Instance.LoadURL(URL);
+
+            Application.OpenURL(URL);
         }
     }
 }
