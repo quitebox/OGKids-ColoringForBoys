@@ -6728,7 +6728,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CamMaxZoomInPercent: 500
-  PageConfig: {fileID: 11400000, guid: f6cc6253020a74b4b97478c268d50cbb, type: 2}
+  PageConfig: {fileID: 11400000, guid: c421e0da4e7984146b69d1108b6e09d8, type: 2}
   OutlineTexture: {fileID: 0}
   RegionTexture: {fileID: 0}
   OutlineLayerOffset: 25
@@ -9568,7 +9568,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83a19f704d8684cdbb9c939bf2938f7b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  watermarkTex: {fileID: 2800000, guid: 8dacb64b8df074fc7994b9029d518473, type: 3}
   canvasController: {fileID: 699845169}
   outputImage: {fileID: 981393208}
   OnStart:
@@ -10377,46 +10376,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1173272485
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1173272486}
-  - component: {fileID: 1173272487}
-  m_Layer: 0
-  m_Name: AudioListener
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1173272486
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1173272485}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!81 &1173272487
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1173272485}
-  m_Enabled: 1
 --- !u!1 &1196263316
 GameObject:
   m_ObjectHideFlags: 0
@@ -14349,9 +14308,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55f7eaf6dd2a2478c939f6bb532e39ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scene: Menu
+  scene: Game
   duration: 0.6
   color: {r: 0.16078432, g: 0.5254902, b: 0.9960785, a: 1}
+  loadSceneMode: 0
+  unloadRequest: 1
 --- !u!1 &1695769008
 GameObject:
   m_ObjectHideFlags: 0
@@ -14368,7 +14329,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1695769009
 RectTransform:
   m_ObjectHideFlags: 0
@@ -18732,6 +18693,5 @@ SceneRoots:
   - {fileID: 714960242}
   - {fileID: 1127081113}
   - {fileID: 2130299515}
-  - {fileID: 1173272486}
   - {fileID: 1116605059}
   - {fileID: 1172241554}

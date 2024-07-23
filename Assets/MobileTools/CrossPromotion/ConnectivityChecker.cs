@@ -29,7 +29,7 @@ namespace MobileTools
 
         private IEnumerator CheckInternetRoutine()
         {
-            UnityWebRequest request = new UnityWebRequest("http://google.com");
+            UnityWebRequest request = new UnityWebRequest("https://google.com");
             yield return request.SendWebRequest();
             if (request.error != null)
             {
@@ -41,6 +41,18 @@ namespace MobileTools
                 Debug.Log("Success");
                 OnInternetReachable?.Invoke();
             }
+        }
+
+        public static IEnumerator CheckInternet(UnityAction<bool> OnComplete)
+        {
+            UnityWebRequest request = new UnityWebRequest("https://google.com");
+
+            yield return request.SendWebRequest();
+
+            if (request.error != null)
+                OnComplete?.Invoke(false);
+            else
+                OnComplete?.Invoke(true);
         }
 
         private void OnDisable()

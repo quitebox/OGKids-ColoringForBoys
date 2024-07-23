@@ -138,17 +138,17 @@ namespace Game
             playedMusicAudioSource = music.audio.souce;            
         }
 
-        private void Update()
-        {
-            if (Input.GetKeyDown(KeyCode.Space))
-                Play((SFX_TYPE)Random.Range(1, 12));
+        //private void Update()
+        //{
+        //    if (Input.GetKeyDown(KeyCode.Space))
+        //        Play((SFX_TYPE)Random.Range(1, 12));
 
-            if (Input.GetKeyDown(KeyCode.Alpha1))
-                Play((MUSIC_TYPE)(1), true, true);
-            else if (Input.GetKeyDown(KeyCode.Alpha2))
-                Play((MUSIC_TYPE)(2), true, true);
-            else if (Input.GetKeyDown(KeyCode.Alpha3))
-                Play((MUSIC_TYPE)(3), true, true);
-        }
+        //    if (Input.GetKeyDown(KeyCode.Alpha1))
+        //        Play((MUSIC_TYPE)(1), true, true);
+        //    else if (Input.GetKeyDown(KeyCode.Alpha2))
+        //        Play((MUSIC_TYPE)(2), true, true);
+        //    else if (Input.GetKeyDown(KeyCode.Alpha3))
+        //        Play((MUSIC_TYPE)(3), true, true);
+        //}
     }
 }

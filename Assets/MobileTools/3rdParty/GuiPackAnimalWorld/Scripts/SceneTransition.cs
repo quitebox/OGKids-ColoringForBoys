@@ -13,10 +13,12 @@ namespace Ricimi
         public string scene = "<Insert scene name>";
         public float duration = 1.0f;
         public Color color = Color.black;
+        public UnityEngine.SceneManagement.LoadSceneMode loadSceneMode;
+        public bool unloadRequest = false;
 
         public void PerformTransition()
         {
-            Transition.LoadLevel(scene, duration, color);
+            Transition.LoadLevel(scene, duration, color, loadSceneMode, unloadRequest);
         }
     }
 }

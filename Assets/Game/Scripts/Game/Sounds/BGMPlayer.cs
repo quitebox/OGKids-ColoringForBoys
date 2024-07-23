@@ -16,5 +16,10 @@ namespace Game
                     SoundManager.Instance.Play(musicType, true, true);
             }
         }
+
+        public void Restart()
+        {
+            Start();
+        }
     }
 }

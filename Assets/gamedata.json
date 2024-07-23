@@ -1,0 +1,280 @@
+{
+    "aircraft": {
+        "images": {
+            "1": [
+                "outline.png",
+                "region.png"
+            ],
+            "10": [
+                "outline.png",
+                "region.png"
+            ],
+            "2": [
+                "outline.png",
+                "region.png"
+            ],
+            "3": [
+                "outline.png",
+                "region.png"
+            ],
+            "4": [
+                "outline.png",
+                "region.png"
+            ],
+            "5": [
+                "outline.png",
+                "region.png"
+            ],
+            "6": [
+                "outline.png",
+                "region.png"
+            ],
+            "7": [
+                "outline.png",
+                "region.png"
+            ],
+            "8": [
+                "outline.png",
+                "region.png"
+            ],
+            "9": [
+                "outline.png",
+                "region.png"
+            ]
+        },
+        "0": "thumbnail.png"
+    },
+    "beach": {
+        "images": {
+            "1": [
+                "outline.png",
+                "region.png"
+            ],
+            "10": [
+                "outline.png",
+                "region.png"
+            ],
+            "2": [
+                "outline.png",
+                "region.png"
+            ],
+            "3": [
+                "outline.png",
+                "region.png"
+            ],
+            "4": [
+                "outline.png",
+                "region.png"
+            ],
+            "5": [
+                "outline.png",
+                "region.png"
+            ],
+            "6": [
+                "outline.png",
+                "region.png"
+            ],
+            "7": [
+                "outline.png",
+                "region.png"
+            ],
+            "8": [
+                "outline.png",
+                "region.png"
+            ],
+            "9": [
+                "outline.png",
+                "region.png"
+            ]
+        },
+        "0": "thumbnail.png"
+    },
+    "bikes": {
+        "images": {
+            "1": [
+                "outline.png",
+                "region.png"
+            ],
+            "10": [
+                "outline.png",
+                "region.png"
+            ],
+            "2": [
+                "outline.png",
+                "region.png"
+            ],
+            "3": [
+                "outline.png",
+                "region.png"
+            ],
+            "4": [
+                "outline.png",
+                "region.png"
+            ],
+            "5": [
+                "outline.png",
+                "region.png"
+            ],
+            "6": [
+                "outline.png",
+                "region.png"
+            ],
+            "7": [
+                "outline.png",
+                "region.png"
+            ],
+            "8": [
+                "outline.png",
+                "region.png"
+            ],
+            "9": [
+                "outline.png",
+                "region.png"
+            ]
+        },
+        "0": "thumbnail.png"
+    },
+    "football": {
+        "images": {
+            "1": [
+                "outline.png",
+                "region.png"
+            ],
+            "10": [
+                "outline.png",
+                "region.png"
+            ],
+            "2": [
+                "outline.png",
+                "region.png"
+            ],
+            "3": [
+                "outline.png",
+                "region.png"
+            ],
+            "4": [
+                "outline.png",
+                "region.png"
+            ],
+            "5": [
+                "outline.png",
+                "region.png"
+            ],
+            "6": [
+                "outline.png",
+                "region.png"
+            ],
+            "7": [
+                "outline.png",
+                "region.png"
+            ],
+            "8": [
+                "outline.png",
+                "region.png"
+            ],
+            "9": [
+                "outline.png",
+                "region.png"
+            ]
+        },
+        "0": "thumbnail.png"
+    },
+    "halloween": {
+        "images": {
+            "1": [
+                "outline.png",
+                "region.png"
+            ],
+            "10": [
+                "outline.png",
+                "region.png"
+            ],
+            "11": [
+                "outline.png",
+                "region.png"
+            ],
+            "12": [
+                "outline.png",
+                "region.png"
+            ],
+            "2": [
+                "outline.png",
+                "region.png"
+            ],
+            "3": [
+                "outline.png",
+                "region.png"
+            ],
+            "4": [
+                "outline.png",
+                "region.png"
+            ],
+            "5": [
+                "outline.png",
+                "region.png"
+            ],
+            "6": [
+                "outline.png",
+                "region.png"
+            ],
+            "7": [
+                "outline.png",
+                "region.png"
+            ],
+            "8": [
+                "outline.png",
+                "region.png"
+            ],
+            "9": [
+                "outline.png",
+                "region.png"
+            ]
+        },
+        "0": "thumbnail.png"
+    },
+    "pirates": {
+        "images": {
+            "1": [
+                "outline.png",
+                "region.png"
+            ],
+            "10": [
+                "outline.png",
+                "region.png"
+            ],
+            "2": [
+                "outline.png",
+                "region.png"
+            ],
+            "3": [
+                "outline.png",
+                "region.png"
+            ],
+            "4": [
+                "outline.png",
+                "region.png"
+            ],
+            "5": [
+                "outline.png",
+                "region.png"
+            ],
+            "6": [
+                "outline.png",
+                "region.png"
+            ],
+            "7": [
+                "outline.png",
+                "region.png"
+            ],
+            "8": [
+                "outline.png",
+                "region.png"
+            ],
+            "9": [
+                "outline.png",
+                "region.png"
+            ]
+        },
+        "0": "thumbnail.png"
+    }
+}

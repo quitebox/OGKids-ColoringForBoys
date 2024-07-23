@@ -32,6 +32,11 @@ namespace MobileTools
             }
         }
 
+        public void Restart()
+        {
+            Start();
+        }
+
         public void PlayAd()
         {
             // Update the last ad time

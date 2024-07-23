@@ -21,14 +21,16 @@ namespace PaintCraft.Canvas.Configs
 
         public override Texture2D OutlineTexture
         {
-            get
-            {
-                if (outlineTexture == null)
-                {
-                    outlineTexture = Resources.Load<Texture2D>(OutlinePath);
-                }
-                return outlineTexture;
-            }
+            //get
+            //{
+            //    if (outlineTexture == null)
+            //    {
+            //        outlineTexture = Resources.Load<Texture2D>(OutlinePath);
+            //    }
+            //    return outlineTexture;
+            //}
+
+            get { return PageData.outline; }
         }
 
 
@@ -37,14 +39,16 @@ namespace PaintCraft.Canvas.Configs
         Texture2D regionTexture;
         public override Texture2D RegionTexture
         {
-            get
-            {
-                if (regionTexture == null)
-                {
-                    regionTexture = Resources.Load<Texture2D>(RegionPath);
-                }
-                return regionTexture;
-            }
+            //get
+            //{
+            //    if (regionTexture == null)
+            //    {
+            //        regionTexture = Resources.Load<Texture2D>(RegionPath);
+            //    }
+            //    return regionTexture;
+            //}
+
+            get { return PageData.region; }
         }
 
         public Sprite Icon

@@ -65,7 +65,7 @@ namespace PaintCraft.Controllers
         public Action<PageConfig> OnPageChange;
 
         [NonSerialized]
-        public bool hasOutline = false;
+        public bool hasOutline = false;        
 
         void Awake()
         {
@@ -129,6 +129,14 @@ namespace PaintCraft.Controllers
             {
                 OutlineTexture = (PageConfig as AdvancedPageConfig).OutlineTexture;
                 RegionTexture = (PageConfig as AdvancedPageConfig).RegionTexture;
+
+
+                // Custom Lines -------
+                OutlineTexture = PageData.outline;
+                RegionTexture = PageData.region;
+                // --------------------
+
+
                 hasOutline = OutlineTexture != null;
             }
             else
@@ -255,9 +263,27 @@ namespace PaintCraft.Controllers
         {
             get
             {
-                return Path.Combine(SaveDirectory, PageConfig.UniqueId + ".jpg");
+                //return Path.Combine(SaveDirectory, PageConfig.UniqueId + ".jpg");
+                return Path.Combine(SaveDirectory, PageData.pageName + ".jpg");
             }
         }
+
+        public string IconSavePath
+        {
+            get
+            {
+                string dir = Path.Combine(Application.persistentDataPath, "icons");
+                if (!Directory.Exists(dir))
+                {
+                    Directory.CreateDirectory(dir);
+                }
+
+                //return Path.Combine(dir, PageConfig.IconSavePath + ".jpg");
+                return Path.Combine(dir, PageData.pageName + ".jpg");
+            }
+        }
+
+
 
         Texture2D tmpTexture2D;
 
@@ -306,7 +332,8 @@ namespace PaintCraft.Controllers
             RenderTexture.active = downscaledRT;
 
             TmpTextureIcon2D.ReadPixels(new Rect(0, 0, PreviewIconWidth, PreviewIconWidth), 0, 0, false);
-            File.WriteAllBytes(PageConfig.IconSavePath, TmpTextureIcon2D.EncodeToJPG(100));
+            //File.WriteAllBytes(PageConfig.IconSavePath, TmpTextureIcon2D.EncodeToJPG(100));
+            File.WriteAllBytes(IconSavePath, TmpTextureIcon2D.EncodeToJPG(100));
             RenderTexture.ReleaseTemporary(downscaledRT);
             RenderTexture.active = tmp;
         }

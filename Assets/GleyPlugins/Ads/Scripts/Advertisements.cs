@@ -987,7 +987,7 @@ public class Advertisements : MonoBehaviour
             }
             if (interstitialMediation == SupportedMediation.OrderMediation)
             {
-                Debug.Log(allAdvertisers[i].mediationSettings.interstitialSettings.Order);
+                //Debug.Log(allAdvertisers[i].mediationSettings.interstitialSettings.Order);
                 if (allAdvertisers[i].mediationSettings.interstitialSettings.Order != 0)
                 {
                     interstitialAdvertisers.Add(allAdvertisers[i]);

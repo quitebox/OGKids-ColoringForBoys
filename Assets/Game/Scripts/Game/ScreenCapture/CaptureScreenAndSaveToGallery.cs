@@ -16,7 +16,7 @@ namespace Game
         private Texture2D outlineTex;
         private Texture2D regionTex;
 
-        [SerializeField] private Texture2D watermarkTex;
+        //[SerializeField] private Texture2D watermarkTex;
         [SerializeField] private CanvasController canvasController;
         [SerializeField] private RawImage outputImage;
 
@@ -46,7 +46,8 @@ namespace Game
             yield return new WaitForEndOfFrame();
 
             outlineMeshR = GameObject.Find("Outline").GetComponent<MeshRenderer>();
-            outlineTex = CopyTexture((Texture2D)outlineMeshR.material.mainTexture);
+            //outlineTex = CopyTexture((Texture2D)outlineMeshR.material.mainTexture);
+            outlineTex = (Texture2D)outlineMeshR.material.mainTexture;
             outlineTex = Resize(outlineTex, 512, 512);
 
             regionTex = new Texture2D(outlineTex.width, outlineTex.height);
@@ -89,11 +90,32 @@ namespace Game
 
         public Texture2D CopyTexture(Texture2D originalTexture)
         {
-            Texture2D result = new Texture2D(originalTexture.width, originalTexture.height, TextureFormat.ARGB32, false);
+            //Texture2D result = new Texture2D(originalTexture.width, originalTexture.height, TextureFormat.ARGB32, false);
+            Texture2D result = duplicateTexture(originalTexture);
             result.SetPixels(originalTexture.GetPixels());
             result.Apply();
 
             return result;
+        }
+
+        Texture2D duplicateTexture(Texture2D source)
+        {
+            RenderTexture renderTex = RenderTexture.GetTemporary(
+                        source.width,
+                        source.height,
+                        0,
+                        RenderTextureFormat.Default,
+                        RenderTextureReadWrite.Linear);
+
+            Graphics.Blit(source, renderTex);
+            RenderTexture previous = RenderTexture.active;
+            RenderTexture.active = renderTex;
+            Texture2D readableText = new Texture2D(source.width, source.height);
+            readableText.ReadPixels(new Rect(0, 0, renderTex.width, renderTex.height), 0, 0);
+            readableText.Apply();
+            RenderTexture.active = previous;
+            RenderTexture.ReleaseTemporary(renderTex);
+            return readableText;
         }
 
         public Texture2D MergeTextures(Texture2D background, Texture2D watermark)
